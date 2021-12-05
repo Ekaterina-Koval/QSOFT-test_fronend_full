@@ -12,6 +12,16 @@
   font-style: normal;
   font-display: swap; }
 
+:root {
+  --basic-white: #ffffff;
+  --main-dark: #121920;
+  --main-dark-link: #768298;
+  --main-medium: #bbc4d6;
+  --main-medium-opacyty-05: rgba(187, 196, 214, 0.5);
+  --main-light: #ebebf1;
+  --large-shadow-opacity-01: rgba(0, 0, 0, 0.1);
+  --large-shadow-opacity03: rgba(164, 164, 164, 0.03); }
+
 .page {
   height: 100%;
   width: 100%;
@@ -27,8 +37,8 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  color: #121920;
-  background-color: #ffffff; }
+  color: var(--main-dark);
+  background-color: var(--basic-white); }
 
 .container {
   box-sizing: border-box;
@@ -87,7 +97,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #ebebf1; } }
+        background-color: var(--main-light); } }
   @media (min-width: 1170px) {
     .header__user {
       min-width: 13%; } }
@@ -143,10 +153,10 @@
   margin-bottom: 20px;
   padding: 25px;
   box-sizing: border-box;
-  border: 1px solid #ebebf1;
+  border: 1px solid var(--main-light);
   border-radius: 5px; }
   .partners__item:hover, .partners__item:focus-within {
-    box-shadow: -3px 0 40px rgba(0, 0, 0, 0.1), 0 0 10px rgba(164, 164, 164, 0.03); }
+    box-shadow: -3px 0 40px var(--large-shadow-opacity-01), 0 0 10px var(--large-shadow-opacity03); }
   @media (min-width: 768px) and (max-width: 1169px) {
     .partners__item {
       width: 31.5%;
@@ -193,7 +203,7 @@
         height: 1px;
         top: 0;
         left: -20px;
-        background-color: rgba(187, 196, 214, 0.5); } }
+        background-color: var(--main-medium-opacyty-05); } }
   .search::after {
     content: "";
     position: absolute;
@@ -224,7 +234,7 @@
   @media (min-width: 768px) {
     .search__input {
       padding-left: 39px;
-      border: 1px solid #ebebf1;
+      border: 1px solid var(--main-light);
       border-radius: 5px; } }
 
 .user-account {
@@ -257,7 +267,7 @@
       align-items: center;
       line-height: 1.2em;
       letter-spacing: 0.01em;
-      color: #768298;
+      color: var(--main-dark-link);
       text-decoration: none; } }
 
 .user-account__name {
