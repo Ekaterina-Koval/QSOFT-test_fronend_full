@@ -1,0 +1,56 @@
+.user-account {
+  @include display-flex-wrap;
+  justify-content: flex-end;
+}
+
+.user-account__link {
+  position: relative;
+  display: block;
+
+  @media (max-width: $small-width-only) {
+    min-width: 24px;
+    min-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/icon-user.svg");
+    }
+  }
+
+  @media (min-width: $medium-width) {
+    min-width: 130px;
+    min-height: min-content;
+
+    @include display-flex-wrap;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    color: $main-dark-link;
+    text-decoration: none;
+  }
+}
+
+.user-account__name {
+  @media (max-width: $small-width-only) {
+    display: none;
+  }
+
+  display: block;
+  min-width: min-content;
+  height: min-content;
+  margin-right: 10px;
+}
+
+.user-account__avatar {
+  @media (max-width: $small-width-only) {
+    display: none;
+  }
+
+  display: block;
+}
