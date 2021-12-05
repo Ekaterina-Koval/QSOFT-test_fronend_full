@@ -26,12 +26,12 @@
   margin-bottom: 20px;
   padding: 25px;
   box-sizing: border-box;
-  border: 1px solid $main-light;
+  border: 1px solid var(--main-light);
   border-radius: 5px;
 
   &:hover,
   &:focus-within {
-    box-shadow: -3px 0 40px $large-shadow-opacity-01, 0 0 10px $large-shadow-opacity03;
+    box-shadow: -3px 0 40px var(--large-shadow-opacity-01), 0 0 10px var(--large-shadow-opacity03);
   }
 
   @media (min-width: $medium-width) and (max-width: $medium-width-only) {

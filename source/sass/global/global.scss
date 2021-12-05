@@ -14,8 +14,8 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  color: $main-dark;
-  background-color: $basic-white;
+  color: var(--main-dark);
+  background-color: var(--basic-white);
 }
 
 .container {
