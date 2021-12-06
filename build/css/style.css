@@ -20,7 +20,9 @@
   --main-medium-opacyty-05: rgba(187, 196, 214, 0.5);
   --main-light: #ebebf1;
   --large-shadow-opacity-01: rgba(0, 0, 0, 0.1);
-  --large-shadow-opacity03: rgba(164, 164, 164, 0.03); }
+  --large-shadow-opacity03: rgba(164, 164, 164, 0.03);
+  --box-shadow: rgba(0, 0, 0, 0.5)
+; }
 
 .page {
   height: 100%;
@@ -62,7 +64,7 @@
   overflow: hidden; }
 
 .header {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 10px var(--box-shadow);
   overflow: hidden; }
 
 .header__wrapper {
